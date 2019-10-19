@@ -3,6 +3,7 @@ import { battle } from '../utils/api'
 import { GiPerson, GiCompass, GiBriefcase, GiTwoShadows, GiShadowFollower, GiTinker, GiPodiumWinner } from 'react-icons/gi'
 import Card from './Card'
 import PropTypes from 'prop-types'
+import Loading from './Loading'
 
 function ProfileList({ profile }) {
   return (
@@ -78,9 +79,7 @@ export default class Results extends React.Component {
     
     if (loading === true) {
       return (
-        <p>
-          LOADING
-        </p>
+       <Loading text='Battling' />
       )
     }
 
