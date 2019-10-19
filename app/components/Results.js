@@ -34,7 +34,7 @@ function ProfileList({ profile }) {
       </li>
       <li>
         <GiTinker color='' size={22} />
-        repos
+        {profile.public_repos} repos
       </li>
     </ul>
   )
